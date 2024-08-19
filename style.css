@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI";
+  color: white;
+}
+
+.container-1,
+.container-2 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.container-1 {
+  background-color: rgb(2, 2, 83);
+}
+.container-2 {
+  background-color: rgb(174, 37, 253);
+}
+.insider {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+h1 {
+  font-size: 7rem;
+  text-align: center;
+  margin-bottom: 50px;
+}
+h3 {
+  font-size: 3rem;
+}
+p {
+  font-size: 25px;
+}
+
+/*Mobile layout*/
+@media (max-width: 480px) {
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+  }
+  .insider {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .insider p {
+    text-align: justify;
+  }
+}
+/*Tablet layout*/
+@media (min-width: 481px) and (max-width: 768px) {
+  h3 {
+    font-size: 1.5rem;
+    border: 1px solid wheat;
+  }
+}
