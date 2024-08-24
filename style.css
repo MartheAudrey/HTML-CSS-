@@ -37,9 +37,10 @@ h1 {
 }
 h3 {
   font-size: 3rem;
+  flex-basis: 30%;
 }
 p {
-  font-size: 25px;
+  font-size: 2rem;
 }
 
 /*Mobile layout*/
@@ -60,12 +61,21 @@ p {
   }
   .insider p {
     text-align: justify;
+    font-size: 1.5rem;
   }
 }
 /*Tablet layout*/
 @media (min-width: 481px) and (max-width: 768px) {
   h3 {
     font-size: 1.5rem;
-    border: 1px solid wheat;
+    flex-basis: 40%;
+  }
+}
+
+/*Desktop layout*/
+@media (min-width: 769px) {
+  h3 {
+    font-size: 2rem;
+    flex-basis: 40%;
   }
 }
